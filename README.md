@@ -8,10 +8,12 @@ Hitting return opens a browser window with the proper RFC for that status code.
 
 ![alfred-http](https://cloud.githubusercontent.com/assets/1006966/5054136/93735f3c-6c1f-11e4-8bda-8f523cc9fb5a.jpg)
 
+This is a fork which adds Cloudflare's [unique 5XX HTTP codes](https://support.cloudflare.com/hc/en-us/articles/115003014432-HTTP-Status-Codes).
+
 ## Installation
 
 * Download the [latest
-release](https://github.com/JoelQ/alfred-http/releases/latest)
+release](https://github.com/d-lord/alfred-http/releases/latest)
 * Open finder and doubleclick the `HTTP.Statuses.alfredworkflow` file
 
 ## Contributing
