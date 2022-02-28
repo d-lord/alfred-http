@@ -210,6 +210,12 @@ statuses = [
     :defined_in => "http://tools.ietf.org/html/rfc7231#section-6.5.15",
   },
   {
+    :status_code => "429",
+    :reason_phrase => "Too Many Requests",
+    :one_liner => "Client has sent too many requests in the specified amount of time",
+    :defined_in => "https://datatracker.ietf.org/doc/html/rfc6585#section-4",
+  },
+  {
     :status_code => "500",
     :reason_phrase => "Internal Server Error",
     :one_liner => "The server encountered an unexpected condition that prevented it from fulfilling the request",
@@ -245,6 +251,65 @@ statuses = [
     :one_liner => "The server does not support, or refuses to support, the major version of HTTP that was used in the request",
     :defined_in => "http://tools.ietf.org/html/rfc7231#section-6.6.6",
   },
+
+
+  # new
+  # https://support.cloudflare.com/hc/en-us/articles/115003011431/
+  {
+    :status_code => "520",
+    :reason_phrase => "Web Server Returns an Unknown Error",
+    :one_liner => "Ooccurs when the origin server returns an empty, unknown, or unexpected response to Cloudflare",
+    :defined_in => "https://support.cloudflare.com/hc/en-us/articles/115003011431/#520error",
+  },
+  {
+    :status_code => "521",
+    :reason_phrase => "Web Server is Down",
+    :one_liner => "Origin web server refused connections from Cloudflare",
+    :defined_in => "https://support.cloudflare.com/hc/en-us/articles/115003011431/#521error",
+  },
+  {
+    :status_code => "522",
+    :reason_phrase => "Connection Timed Out",
+    :one_liner => "Cloudflare timed out contacting the origin web server",
+    :defined_in => "https://support.cloudflare.com/hc/en-us/articles/115003011431/#522error",
+  },
+  {
+    :status_code => "523",
+    :reason_phrase => "Origin is Unreachable",
+    :one_liner => "Cloudflare cannot contact your origin web server",
+    :defined_in => "https://support.cloudflare.com/hc/en-us/articles/115003011431/#523error",
+  },
+  {
+    :status_code => "524",
+    :reason_phrase => "A Timeout Occurred",
+    :one_liner => "Cloudflare successfully connected to the origin web server, but the origin did not provide an HTTP response before the default 100 second connection timed out",
+    :defined_in => "https://support.cloudflare.com/hc/en-us/articles/115003011431/#524error",
+  },
+  {
+    :status_code => "525",
+    :reason_phrase => "SSL Handshake Failed",
+    :one_liner => "The SSL handshake between Cloudflare and the origin web server failed",
+    :defined_in => "https://support.cloudflare.com/hc/en-us/articles/115003011431/#525error",
+  },
+  {
+    :status_code => "526",
+    :reason_phrase => "Invalid SSL Certificate",
+    :one_liner => "Cloudflare cannot validate the SSL certificate at your origin web server (and is set to strict SSL)",
+    :defined_in => "https://support.cloudflare.com/hc/en-us/articles/115003011431/#526error",
+  },
+  {
+    :status_code => "527",
+    :reason_phrase => "Railgun Listener to Origin Error",
+    :one_liner => "An interrupted connection between Cloudflare and your origin's Railgun server",
+    :defined_in => "https://support.cloudflare.com/hc/en-us/articles/115003011431/#527error",
+  },
+  {
+    :status_code => "530",
+    :reason_phrase => "A Timeout Occurred",
+    :one_liner => "Wraps a Cloudflare 1XXX error. Press ↩ for more info",
+    :defined_in => "https://support.cloudflare.com/hc/en-us/articles/115003011431/#530error",
+  },
+
 ]
 
 
