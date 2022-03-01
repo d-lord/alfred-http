@@ -258,7 +258,7 @@ statuses = [
   {
     :status_code => "520",
     :reason_phrase => "Web Server Returns an Unknown Error",
-    :one_liner => "Ooccurs when the origin server returns an empty, unknown, or unexpected response to Cloudflare",
+    :one_liner => "Occurs when the origin server returns an empty, unknown, or unexpected response to Cloudflare",
     :defined_in => "https://support.cloudflare.com/hc/en-us/articles/115003011431/#520error",
   },
   {
