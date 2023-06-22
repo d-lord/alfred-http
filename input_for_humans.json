@@ -156,6 +156,12 @@
     "defined_in": "https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.8"
   },
   {
+    "status_code": "409",
+    "reason_phrase": "CF DNS Resolution Error",
+    "one_liner": "Cloudflare will serve a 409 response for Error 1001: DNS Resolution Error",
+    "defined_in": "https://developers.cloudflare.com/support/troubleshooting/http-status-codes/4xx-client-error/#409-conflictrfc7231httpstoolsietforghtmlrfc7231"
+  },
+  {
     "status_code": "410",
     "reason_phrase": "Gone",
     "one_liner": "The resource requested is no longer available and will not be available again",
@@ -214,6 +220,12 @@
     "reason_phrase": "Too Many Requests",
     "one_liner": "Client has sent too many requests in the specified amount of time",
     "defined_in": "https://datatracker.ietf.org/doc/html/rfc6585#section-4"
+  },
+  {
+    "status_code": "499",
+    "reason_phrase": "Client Closed Request",
+    "one_liner": "Nginx specific response code to indicate when the connection has been closed by the client while the server is still processing its request, making server unable to send a status code back",
+    "defined_in": "https://support.cloudflare.com/hc/en-us/articles/115003014512/"
   },
   {
     "status_code": "500",

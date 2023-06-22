@@ -21,13 +21,17 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Joël Quenneville</string>
+	<string>Joël Quenneville, David Lord</string>
 	<key>description</key>
 	<string>HTTP status codes</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
 	<string>HTTP</string>
+	<key>readme</key>
+	<string>Provides one-line HTTP status codes and links to documentation, with a focus on Cloudflare-specific behaviour.</string>
+	<key>version</key>
+	<string>1.4</string>
 	<key>objects</key>
 	<array>
 		<dict>
